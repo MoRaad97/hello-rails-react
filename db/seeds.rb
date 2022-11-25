@@ -5,23 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Gre
-Message.create!([
-  {
-      greeting: "Hi"
-  },
-  {
-      greeting: "Hello"
-  },
-  {
-      greeting: "Hey"
-  },
-  {
-      greeting: "what's up"
-  },
-  {
-  greeting: "السلام عليكم"
-  }
-])
 
-p "Created #{Message.count} messages"
+Greeting.destroy_all
+Greeting.create({greeting: "Hi"})
+Greeting.create({greeting: "Hello"})
+Greeting.create({greeting: "what's up"})
+Greeting.create({greeting: "Hi Hi"})
+Greeting.create({greeting: "Hi Hi Hi"})
