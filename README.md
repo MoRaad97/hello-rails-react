@@ -1,56 +1,64 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Hello Rails React 
 
-> Description the project.
+> this is a project to practice how to use react with rails in one app.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- Ruby on Rails
+- HTML
+- React js
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get this program running on your computer,
 
+1. Install **Ruby**
+2. Install **postgres** database engine
+2. Clone the project repository ([link](../../))
 
-To get a local copy up and running follow these simple example steps.
+### To setup your environment frameworks, run
+  ```
+    $ bundle install
+    
+    $ npm install
+  ```
 
-### Prerequisites
+### To setup both testing and development databases
+  Create a _**`.env`**_ file in the root directory of the app, and then add this
+  ```
+    DB_USERNAME = <USERNAME_THAT_WORKS_WITH_SETUP_POSTGRES_DATABASE>
+    DB_PASSWORD = <PASSWORD_ASSOCIATED_WITH_THE_POSTGRES_USERNAME>
+  ```
 
-### Setup
+  I've come across weird scenarios where certain routines would result in errors on Windows platform when 
+  they work fine on other platforms. So, I've chosen those that are more likely to succeed.
+  ```
+    > rake db:create
+    > rake db:migrate
+  ```
 
-### Install
+  For Linux and macOS platforms
+  ```
+    $ rake db:prepare
+  ```
 
-### Usage
-
-### Run tests
-
-### Deployment
-
+### To run local server
+  ```
+    $ rails s
+  ```
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Mohammed Raad**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@MoRaad97](https://github.com/MoRaad97)
+- Twitter: [@MohammedRaadz](https://twitter.com/MohammedRaadz)
+- LinkedIn: [Mohammed Raad](linkedin.com/in/mohammed-raad-600176210)
 
 ## 🤝 Contributing
 
@@ -62,11 +70,6 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 
